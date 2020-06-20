@@ -25,29 +25,31 @@
                     <a href="includes/logout.php"><img src="imagenes/off.png" alt="">Cerrar session</a>
                     -->
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark navadmin">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03"
-            aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <a class="navbar-brand welcom col-sm">Admin </a>
-        <a class="navbar-brand col-sm">Bienvenido :</a>
-        <div class="collapse navbar-collapse">
-            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-                <li class="nav-item active">
-                    <a class="nav-link col-6 user"><?php echo $user->getNombre(); ?> </a>
-                </li>
-                <br>
-            </ul>
-            <a class="btn btn-success" href="index.php" target="_blank">ver datos</a>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark navadmin">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <a class="navbar-brand welcom" href="#">UEPOM dmin</a>
+  
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+      <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+        <li class="nav-item active">
+          <a class="nav-link user-2" href="#">Bienvenido</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link user" href="#"><?php echo $user->getNombre(); ?></a>
+        </li>
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+      <a class="navbar-brand linkclose">Datos</a>
+      <a href="index.php"><img class="closeimg-2" src="imagenes/dbt.png" alt=""></a>
+        <a class="nav-link userhour col-sm user-2">Hora de inicio : <?php echo date("h:i:s A", strtotime("- 7 hour")); ?> </a>
+        <a class="navbar-brand linkclose">Cerrar session</a>
+        <a href="includes/logout.php"><img class="closeimg" src="imagenes/offbtn.png" alt=""></a>
+      </form>
+    </div>
+</nav>
 
-            <a class="nav-link userhour">Hora de inicio : <?php echo date("h:i:s A", strtotime("- 7 hour")); ?> </a>
-            <form class="form-inline my-2 my-lg-0">
-                <a class="navbar-brand linkclose">Cerrar session</a>
-                <a href="includes/logout.php"><img class="closeimg" src="imagenes/offbtn.png" alt=""></a>
-            </form>
-        </div>
-    </nav>
     <br>
     <br>
 

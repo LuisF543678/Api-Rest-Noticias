@@ -8,6 +8,13 @@
     margin-right: 25px;
 }
 
+.closeimg-2 {
+    width: 30px !important;
+    height: 30pz !important;
+    margin-right: 25px;
+}
+
+
 .linkclose {
     font-weight: bold !important;
    font-size: 15px !important;
@@ -16,9 +23,17 @@
 
 
 .user {
+    color: #ffffff !important;
     font-weight: bold !important;
-    font-size: 20px !important;
     font-style: italic;
+    font-size: 18px !important;
+
+}
+
+.user-2 {
+    color: #ffffff !important;
+    font-weight: bold !important;
+    font-size: 18px !important;
 }
 
 .userhour {
