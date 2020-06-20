@@ -1,6 +1,5 @@
 <?php
-
-    include_once 'db.php';
+    include_once 'includes/db.php';
     
     class Noticia extends DB {
 

@@ -1,7 +1,7 @@
 <?php
 
     include_once 'noticia.php';
-
+    //echo '<script src="assets/alertifyjs/alertify.js"></script>';
     class ApiNoticias {
 
         private $imagen;
@@ -55,8 +55,8 @@
             $noticia = new Noticia();
 
             $res = $noticia->nuevaNoticia($item);
-            $this->exito('Nueva noticia registrada');
-            echo '<script type="text/javascript"> alert("Datos agregados"); window.location.href = "formulario.html";</script>';
+            //$this->exito('Nueva noticia registrada');
+            echo '<script type="text/javascript">alert("Datos agregados"); window.location.href = "indexlogin.php";</script>';
         }
 
         function printJSON($array) {
