@@ -3,8 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
-  
+    <title>UEPOM | Login</title>
     <?php echo '<link rel="stylesheet" href="css/style.css">'?>
 
 </head>
@@ -16,9 +15,7 @@
     ?>
   <div class="wrapper fadeInDown">
         <div id="formContent">
-          <!-- Tabs Titles -->
           <h2 class="active"> Iniciar sesi&oacute;n </h2>
-          <!-- Login Form -->
           <form action="" method="POST">
             <input type="text" class="fadeIn second" name="username" placeholder="Username">
             <input type="password" class="fadeIn third" name="password" placeholder=Ppassword">
