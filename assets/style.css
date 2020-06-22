@@ -95,3 +95,7 @@
     padding-left: 30px;
     padding-right: 30px;
 }
+
+html {
+    font-family: sans-serif, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+}

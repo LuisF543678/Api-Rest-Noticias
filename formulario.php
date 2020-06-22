@@ -19,11 +19,10 @@
         <input type="file" name="imagen" required>
         <input type="submit" value="Registrar nueva noticia">        
     </form>
-    
     <h4>Bienvenido : <i><?php echo $user->getNombre(); ?></i> </h4>
-                    <h4>Hora : <?php echo date("h:i:s A", strtotime("- 7 hour")); ?> </h4>
-                    <a href="includes/logout.php"><img src="imagenes/off.png" alt="">Cerrar session</a>
-                    -->
+    <h4>Hora : <?php echo date("h:i:s A", strtotime("- 7 hour")); ?> </h4>
+    <a href="includes/logout.php"><img src="imagenes/off.png" alt="">Cerrar session</a>
+    -->
 
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark navadmin">
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
@@ -42,9 +41,9 @@
       </ul>
       <form class="form-inline my-2 my-lg-0">
       <a class="navbar-brand linkclose">Datos</a>
-      <a href="index.php"><img class="closeimg-2" src="imagenes/dbt.png" alt=""></a>
+      <a target="_blank" href="index.php"><img class="closeimg-2" src="imagenes/dbt.png" alt=""></a>
         <a class="nav-link userhour col-sm user-2">Hora de inicio : <?php echo date("h:i:s A", strtotime("- 7 hour")); ?> </a>
-        <a class="navbar-brand linkclose">Cerrar session</a>
+        <a class="navbar-brand linkclose">Cerrar sesi&oacute;n</a>
         <a href="includes/logout.php"><img class="closeimg" src="imagenes/offbtn.png" alt=""></a>
       </form>
     </div>
@@ -53,13 +52,13 @@
     <br>
     <br>
 
-    <div class="">
+<div class="">
         <form class="border" action="add.php" method="POST" enctype="multipart/form-data">
             <div class="form-group col ">
-                <label class="fontlabel">Descripcion</label>
+                <label class="fontlabel">Descripci&oacute;n</label>
                 <textarea class="form-control alincontend-2" type="text" name="descripcion" required
                     rows="5"></textarea>
-            </div>
+            </div>            
             <div class="form-group col-sm">
                 <label class="col-md-auto fontlabel-2">selecciona</label>
                 <svg class="bi bi-file-earmark-arrow-up" width="2em" height="2em" viewBox="0 0 16 16"
