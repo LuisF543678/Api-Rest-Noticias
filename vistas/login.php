@@ -17,11 +17,11 @@
   <div class="wrapper fadeInDown">
         <div id="formContent">
           <!-- Tabs Titles -->
-          <h2 class="active"> Iniciar session </h2>
+          <h2 class="active"> Iniciar sesi&oacute;n </h2>
           <!-- Login Form -->
           <form action="" method="POST">
             <input type="text" class="fadeIn second" name="username" placeholder="Username">
-            <input type="password" class="fadeIn third" name="password" placeholder="password">
+            <input type="password" class="fadeIn third" name="password" placeholder=Ppassword">
             <input type="submit" class="fadeIn fourth" value="Iniciar Sesión">
           </form>
         </div>
