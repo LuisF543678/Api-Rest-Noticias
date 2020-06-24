@@ -56,7 +56,7 @@
 
             $res = $noticia->nuevaNoticia($item);
             //$this->exito('Nueva noticia registrada');
-            echo '<script type="text/javascript">alert("Datos agregados"); window.location.href = "indexlogin.php";</script>';
+            echo '<script type="text/javascript">alert("Datos agregados"); window.location.href = "dashboard.php";</script>';
         }
 
         function printJSON($array) {

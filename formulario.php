@@ -1,56 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <?php echo '<link rel="shortcut icon" href="assets/images/icondash.ico">'?>
     <?php echo '<link rel="stylesheet" href="assets/css/bootstrap.min.css">'?>
-    <?php echo '<link rel="stylesheet" href="assets/style.css">'?>
+    <?php echo '<link rel="stylesheet" href="assets/style_dashboard.css">'?>
     <?php echo '<script src="assets/js/jquery-3.4.1.min.js"></script>'?>
     <?php echo '<script src="assets/js/bootstrap.min.js"></script>'?>
     <title>Admin | Dashboard</title>
 </head>
-
 <body>
-
-    <!--    
-    <form action="add.php" method="POST" enctype="multipart/form-data">
-        <input type="text" name="descripcion" required>
-        <input type="file" name="imagen" required>
-        <input type="submit" value="Registrar nueva noticia">        
-    </form>
-    <h4>Bienvenido : <i><?php echo $user->getNombre(); ?></i> </h4>
-    <h4>Hora : <?php echo date("h:i:s A", strtotime("- 7 hour")); ?> </h4>
-    <a href="includes/logout.php"><img src="imagenes/off.png" alt="">Cerrar session</a>
-    -->
 
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark navadmin">
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <a class="navbar-brand welcom" href="#">UEPOM dmin</a>
+    <a class="navbar-brand welcom">UEPOM admin</a>
   
     <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
       <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
         <li class="nav-item active">
-          <a class="nav-link user-2" href="#">Bienvenido</a>
+          <a class="nav-link user-2">Bienvenido</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link user" href="#"><?php echo $user->getNombre(); ?></a>
+          <a class="nav-link user"><?php echo $user->getNombre(); ?></a>
         </li>
       </ul>
       <form class="form-inline my-2 my-lg-0">
       <a class="navbar-brand linkclose">Datos</a>
-      <a target="_blank" href="index.php"><img class="closeimg-2" src="imagenes/dbt.png" alt=""></a>
+      <a target="_blank" href="news.php"><img class="closeimg-2" src="assets/images/dbt.png" alt=""></a>
         <a class="nav-link userhour col-sm user-2">Hora de inicio : <?php echo date("h:i:s A", strtotime("- 7 hour")); ?> </a>
         <a class="navbar-brand linkclose">Cerrar sesi&oacute;n</a>
-        <a href="includes/logout.php"><img class="closeimg" src="imagenes/offbtn.png" alt=""></a>
+        <a href="includes/logout.php"><img class="closeimg" src="assets/images/offbtn.png" alt=""></a>
       </form>
     </div>
 </nav>
 
-    <br>
-    <br>
+<br>
+<br>
 
 <div class="">
         <form class="border" action="add.php" method="POST" enctype="multipart/form-data">

@@ -22,7 +22,7 @@
             $user->setUser($userForm);
             include_once 'formulario.php';
         } else {
-            $errorLogin = "<script>Swal.fire('nombre de usuario y/o password incorrectos')</script>";
+            $errorLogin = "<script>Swal.fire('Contraseña incorrecta. Vuelve a intentarlo.')</script>";
             include_once 'vistas/login.php';
         }
     } else {

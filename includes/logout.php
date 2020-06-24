@@ -5,7 +5,7 @@
     $userSession = new UserSession();
     $userSession-> closerSession();
 
-    header("location:../indexlogin.php");
+    header("location:../dashboard.php");
     //    header("location:../index.php");
 
 
