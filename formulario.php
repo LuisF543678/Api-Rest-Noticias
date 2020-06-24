@@ -48,7 +48,7 @@
                     rows="5"></textarea>
             </div>            
             <div class="form-group col-sm">
-                <label class="col-md-auto fontlabel-2">selecciona</label>
+                <label class="col-md-auto fontlabel-2">Subir</label>
                 <svg class="bi bi-file-earmark-arrow-up" width="2em" height="2em" viewBox="0 0 16 16"
                     fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                     <path
